@@ -1,0 +1,817 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Crypto4Bussiness</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white2.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+				 	<h1>Crypto4Bussiness</h1>
+
+					<h3>— ein digitaler Erste-Hilfe-Kurs —</h3>
+
+					<h6>von Mario Hesse @ DBD Plasma GmbH</h6>
+				</section>
+				<section data-background="pic/Angreifer.gif">
+				</section>
+				<section>
+					<section data-background="#cccccc">
+						<h2>Angriffspunkte</h2>
+						<img src="pic/Angriffspunkte.png" />
+						<tiny>Bild: Joachim Selzer</tiny>
+					</section>
+					<section data-background="#ee0000">
+						<h2>Interessen</h2>
+						<table>
+							<tr>
+								<td>Ganoven</td>
+								<td>Spione</td>
+								<td>Saboteure</td>
+							</tr>
+							<tr>
+								<td><img src="pic/treasure.svg" /></td>
+								<td><img src="pic/dialog-information.svg" /></td>
+								<td><img src="pic/bomb.svg" /></td>
+							</tr>
+							<tr>
+								<td>Geld</td>
+								<td>Information</td>
+								<td>Zerstöring</td>
+							</tr>
+						</table>
+					</section>
+					<section data-background="#00eeee">
+					<h2>Angriffsszenarien</h2>
+
+					<ul>
+						<li class="fragment fade-in-then-semi-out">Ausspähen von Passwörtern</li>
+						<li class="fragment fade-in-then-semi-out">Daten-Geiselname</li>
+						<li class="fragment fade-in-then-semi-out">Ownen von Geräten für Bot-Netze</li>
+						<li class="fragment fade-in-then-semi-out">Überwachung/Spionage</li>
+						<li class="fragment fade-in">Anschläge auf kritische Infrastruktur</li>
+					</ul>
+
+					<img src="pic/Angriffsszenarien.svg" />
+					</section>
+					<section data-background="#00eeee">
+					<h2>Zwei klassische Situationen</h2>
+
+					<p class="fragment">
+					Alles ist weg <br />
+					<img src="pic/loudly-crying-face.png" />
+					</p>
+
+					<p class="fragment">
+					Alles ist überall<br />
+					<img src="pic/exploding-head.png" />
+					</p>
+					</section>
+				</section>
+				<section data-background="#008">
+					<section>
+						<h3>Warnung:</h3>
+						<h2>Sicherheit kostet</h2>
+						<table>
+							<tr>
+								<td>
+									<img src="pic/security-high.png" width="300px" />
+								</td>
+								<td>
+									<ul>
+										<li class="fragment fade-in-then-semi-out">Einarbeitung</li>
+										<li class="fragment fade-in-then-semi-out">Zeit</li>
+										<li class="fragment fade-in-then-semi-out">Bequemlichkeit</li>
+										<li class="fragment fade-in-then-semi-out">Wartung</li>
+										<li class="fragment fade-in-then-semi-out">Rechenleistung</li>
+										<li class="fragment fade-in">Nerven</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Werkszeuge zur Verteidigung</h2>
+						<table>
+							<tr>
+								<td>
+									<img src="pic/security-high-symbolic-white.svg" width="200"/>
+								</td>
+								<td>
+									<ol>
+										<li class="fragment fade-in-then-semi-out">Passwort Manager</li>
+										<li class="fragment fade-in-then-semi-out">E-Mail Verschlüsselung</li>
+										<li class="fragment fade-in-then-semi-out">Datenverschlüsselung</li>
+										<li class="fragment fade-in">Sichere Authentifizierung</li>
+									</ol>
+								</td>
+								<!--<td>
+									<img src="pic/security-high-symbolic-white.svg" width="150" />
+								</td>-->
+							</tr>
+						</table>
+					</section>
+				</section>
+				<section>
+					<section data-background="#208033">
+						<h3>1. Passwort Manager:</h3>
+						<h4 class="fragment fade-in-then-semi-out"><a href="https://keepass.info/">— Keepass —</a></h4>
+						<h4 class="fragment fade-in-then-semi-out"><a href="https://1password.com/de/">— 1Password —</a></h4>
+						<h4 class="fragment fade-in-then-semi-out"><a href="https://www.keepersecurity.com/de_DE/">— Keeper —</a></h4>
+						<h4 class="fragment fade-in-then-semi-out"><a href="https://www.lastpass.com/de/">— LastPass —</a></h4>
+					</section>
+					<section data-background="#208033">
+						<h3>Es gibt zwei Sorten von Passwörtern</h3>
+
+						<table border="1">
+							<thead>
+								<tr>
+									<td>
+										<span class="fragment fade-in-then-semi-out" data-fragment-index="1"><b>Unbenutzbare</b></span>
+									</td>
+									<td>
+										<span class="fragment fade-in-then-semi-out" data-fragment-index="4"><b>Unbenutzbare</b></span>
+									</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<span class="fragment fade-in-then-semi-out" data-fragment-index="2">→ leicht zu knacken</span>
+									</td>
+									<td>
+										<span class="fragment fade-in-then-semi-out" data-fragment-index="5">→ nicht zu merken</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="fragment fade-in-then-semi-out" data-fragment-index="3">liebe, sex, schatz, geheimnis, …</span>
+									</td>
+									<td>
+										<span class="fragment fade-in-then-semi-out" data-fragment-index="6">p.^4[.Fk59_J`p=">4}.</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-background="#208033">
+						<h3>Wörterbuch Angriff</h3>
+							<table>
+								<tr>
+									<td class="fragment fade-in-then-semi-out">123456</td>
+									<td class="fragment fade-in-then-semi-out">qwerty</td>
+									<td class="fragment fade-in-then-semi-out">password</td>
+									<td class="fragment fade-in-then-semi-out">iloveyou</td>
+								</tr>
+								<tr>
+									<td class="fragment fade-in-then-semi-out">111111</td>
+									<td class="fragment fade-in-then-semi-out">abc123</td>
+									<td class="fragment fade-in-then-semi-out">1q2w3e4r</td>
+									<td class="fragment fade-in-then-semi-out">admin</td>
+								</tr>
+								<tr>
+									<td class="fragment fade-in-then-semi-out">welcome</td>
+									<td class="fragment fade-in-then-semi-out">princess</td>
+									<td class="fragment fade-in-then-semi-out">dragon</td>
+									<td class="fragment fade-in-then-semi-out">michael</td>
+								</tr>
+								<tr>
+									<td class="fragment fade-in-then-semi-out">sunshine</td>
+									<td class="fragment fade-in-then-semi-out">freedom</td>
+									<td class="fragment fade-in-then-semi-out">letmein</td>
+									<td class="fragment fade-in-then-semi-out">secret</td>
+								</tr>
+								<tr>
+									<td class="fragment fade-in-then-semi-out">passw0rd</td>
+									<td class="fragment fade-in-then-semi-out">nothing</td>
+									<td class="fragment fade-in-then-semi-out">biteme</td>
+									<td class="fragment fade-in-then-semi-out">ginger</td>
+								</tr>
+							</table>
+							<p class="fragment fade-in" data-fragment-index="1">
+								<tiny>— Auswahl aus den Top 50 Passwörter von 2019 —</tiny>
+							</p>
+					</section>
+					<section data-auto-animate data-background="#208033">
+						<h3>Brute Force Angriff</h3>
+						<p>→ ausprobieren aller möglichen Kombinationen</p>
+						<p class="fragment fade-in">
+							<img data-id="pic1" src="pic/worker-with-a-drill-1574085055vFh.jpg" width="1px"/><img data-id="pic2" src="pic/worker-with-a-drill-1574085055vFh.jpg" width="1px"/><img data-id="pic3" src="pic/worker-with-a-drill-1574085055vFh.jpg" width="1px"/><img data-id="pic4" src="pic/worker-with-a-drill-1574085055vFh.jpg" width="1px"/><img data-id="pic5" src="pic/worker-with-a-drill-1574085055vFh.jpg" width="250px"/><img data-id="pic6" src="pic/worker-with-a-drill-1574085055vFh.jpg" width="1px"/><img data-id="pic7" src="pic/worker-with-a-drill-1574085055vFh.jpg" width="1px"/><img data-id="pic8" src="pic/worker-with-a-drill-1574085055vFh.jpg" width="1px"/><img data-id="pic9" src="pic/worker-with-a-drill-1574085055vFh.jpg" width="1px"/>
+							<br />
+							<tiny data-id=caption>
+								<a href=https://www.publicdomainpictures.net/en/view-image.php?image=308774&picture=worker-with-a-drill>
+									Bild: "Worker With A Drill" von Petr Kratochvil - Lizenz: CC0
+								</a>
+							</tiny>
+							<br />
+						</p>
+					</section>
+					<section data-auto-animate data-background="#208033">
+						<h3>Brute Force Angriff</h3>
+						<p>→ ausprobieren aller möglichen Kombinationen</p>
+						<p>
+							<img data-id="pic1" data-auto-animate-delay="0.3" src="pic/worker-with-a-drill-1574085055vFh.jpg" width="105px"/><img data-id="pic2" data-auto-animate-delay="0.2" src="pic/worker-with-a-drill-1574085055vFh.jpg" width="105px"/><img data-id="pic3" data-auto-animate-delay="0.1" src="pic/worker-with-a-drill-1574085055vFh.jpg" width="105px"/><img data-id="pic4" data-auto-animate-delay="0" src="pic/worker-with-a-drill-1574085055vFh.jpg" width="105px"/><img data-id="pic5" data-auto-animate-delay="0" src="pic/worker-with-a-drill-1574085055vFh.jpg" width="105px"/><img data-id="pic6" data-auto-animate-delay="0" src="pic/worker-with-a-drill-1574085055vFh.jpg" width="105px"/><img data-id="pic7" data-auto-animate-delay="0.1" src="pic/worker-with-a-drill-1574085055vFh.jpg" width="105px"/><img data-id="pic8" data-auto-animate-delay="0.2" src="pic/worker-with-a-drill-1574085055vFh.jpg" width="105px"/><img data-id="pic9" data-auto-animate-delay="0.3" src="pic/worker-with-a-drill-1574085055vFh.jpg" width="105px"/>
+							<tiny data-id=caption>
+								<a href=https://www.publicdomainpictures.net/en/view-image.php?image=308774&picture=worker-with-a-drill>
+									Bild: "Worker With A Drill" von Petr Kratochvil - Lizenz: CC0
+								</a>
+							</tiny>
+						</p>
+					</section>
+					<section data-background="#208033">
+						<h3>Angriffskraft</h3>
+						<table class="fragment fade-in">
+							<tr>
+								<td>Typ</td>
+								<td>Einführung</td>
+								<td>Kerne</td>
+								<td>Gesch.</td>
+								<td>Keys/s</td>
+							</th>
+							<tr class="fragment fade-in-then-semi-out">
+								<td><a href="https://ark.intel.com/content/www/de/de/ark/products/75131/intel-core-i7-4900mq-processor-8m-cache-up-to-3-80-ghz.html">Core2Duo<a></td>
+								<td>2007</td>
+								<td>2/2</td>
+								<td>2,66</td>
+								<td>20.000.000</td>
+							</tr>
+							<tr class="fragment fade-in-then-semi-out">
+								<td><a href="https://ark.intel.com/content/www/de/de/ark/products/30784/intel-core-2-duo-processor-e6750-4m-cache-2-66-ghz-1333-mhz-fsb.html">i7<a></td>
+								<td>2013</td>
+								<td>4/8</td>
+								<td>3,80</td>
+								<td>2.000.000.000</td>
+							</tr>
+						</table>
+						<p>
+							<tiny class="fragment fade-in-then-semi-out">
+								<a href="http://www.orange.co.jp/~masaki/rc572/fratee.php">
+									Quelle: http://www.orange.co.jp
+								</a>
+							</tiny>
+						</p>
+						</section>
+						<section data-markdown data-background="#208033">
+						Brute Force auf Passwort mit 8 Zeichen
+						![](pic/BruteForce8.png)
+					</section>
+					<section data-markdown data-background="#208033">
+						Brute Force auf Passwort mit 8 - 20 Zeichen
+						![](pic/BruteForce8-20.png)
+					</section>
+					<section data-background="#208033">
+					<h2>Ein gutes Passwort ...</h2>
+
+					<ul>
+						<li class="fragment fade-in-then-semi-out">ist sehr lang <br /><b>→ min. 20 Zeichen</b></li>
+						<li class="fragment fade-in-then-semi-out">besteht aus allen Zeichentypen <br /><b>→ A, a, 1, %</b></li>
+						<li class="fragment fade-in">ist nicht vorhersehbar <br /><b>→ keine persönlichen Infos, Namen, Orte, Daten …</b></li>
+					</ul>
+
+					</section>
+					<section data-background="#208033">
+						<h2>Satz-Methode I</h2>
+						<p><b>E</b>in <b>g</b>utes <b>B</b>ier <b>m</b>uss <b>n</b>icht <b>i</b>mmer <b>a</b>us <b>e</b>inem <b>u</b>nserer <b>16</b> <b>B</b>undesländer <b>k</b>ommen<b>!</b> </p>
+						<p class="fragment"><em>→ "EgBmnia1u16Bk!"</em></p>
+					</section>
+					<section data-background="#208033">
+						<h2>Satz-Methode II & III</h2>
+
+						<p><b>E</b>in <b>g</b>utes <b>B</b>ier <b>m</b>uss <b>n</b>icht <b>i</b>mmer <b>a</b>us <b>e</b>inem <b>u</b>nserer <b>16</b> <b>B</b>undesländer <b>k</b>ommen<b>!</b> </p>
+
+						<p class="fragment fade-in-then-semi-out"><em>→ EingutesBiermussnichtimmeraus einemunserer16Bundesländerkommen!</em></p>
+
+						<p class="fragment"><em>→ E<b>1</b>ngutesBi<b>3</b>rmussnichtimm<b>€</b>raus einemunserer<b>[</b>16<b>]</b>Bundesl<b>a:</b>nderkommen!</em></p>
+					</section>
+					<section data-background="#208033">
+						<h2>Passwortmanager</h2>
+						<table>
+							<tr>
+								<td>
+									<img src="pic/org.gnome.DejaDup.svg" width="200"/>
+								</td>
+								<td>
+									<ul>
+										<li class="fragment fade-in-then-semi-out">Alle Passwörter an einem Ort</li>
+										<li class="fragment fade-in-then-semi-out">Voll verschlüsselt</li>
+										<li class="fragment fade-in-then-semi-out">Synchronisierbar</li>
+										<li class="fragment fade-in">Browser Auto-Fill-in</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section data-auto-animate data-background="#208033">
+						<h2>— Keepass —</h2>
+						<img data-id="keepass" src="pic/keepass-welcome_screen.png" width="700px" />
+					</section>
+					<section data-auto-animate data-background="#208033">
+						<h2>— Keepass —</h2>
+						<img data-id="keepass" src="pic/keepass-unlock_database.png" width="700px" />
+					</section>
+					<section data-auto-animate data-background="#208033">
+						<h2>— Keepass —</h2>
+						<img data-id="keepass" src="pic/keepass-database_view.png" width="700px" />
+					</section>
+					<section data-auto-animate data-background="#208033">
+						<h2>— Keepass —</h2>
+						<img data-id="keepass" src="pic/keepass-password_generator_advanced.png" width="700px" />
+					</section>
+					<section data-auto-animate data-background="#208033">
+						<h2>— Keepass —</h2>
+						<img data-id="keepass" src="pic/keepass-passphrase_generator.png" width="700px" />
+					</section>
+					<section data-auto-animate data-background="#208033">
+						<h2>— Keepass —</h2>
+						<img data-id="keepass" src="pic/keepass-browser_plugin.png" width="700px" />
+					</section>
+				</section>
+				<section data-background="#208033">
+					<section>
+						<h3>2. E-Mail Verschlüsselung:</h3>
+						<h4 class="fragment fade-in-then-semi-out">— PGP —</h4>
+						<h4 class="fragment fade-in-then-semi-out">— Messenger —</h4>
+					</section>
+					<section>
+						<h3>Der digitale Briefumschlag</h3>
+						<video src="vid/DerdigitaleBriefumschlag.mp4" width="1000px"></video>
+						<small>CC-BY @Linuzifer & @Metronaut auf <a href="https://www.youtube.com/watch?v=B-5_fYSrQbg">Youtube.com</a></small>
+					</section>
+					<section>
+						<h3>PGP Installationsanleitungen</h3>
+						<table align="center">
+							<tr>
+								<td align="center"><a href="res/PGP-mit-Thunderbird.pdf"><img src="pic/thunderbird.svg" height="150" /></a></td>
+								<td ></td><td ></td><td ></td>
+								<td align="center"><a href="res/PGP-mit-Outlook.pdf"><img src="pic/outlook.svg" height="150" /></a></td>
+							</tr>
+							<tr>
+								<td valign="middle"><a href="res/PGP-mit-Outlook.pdf">Outlook</a></td>
+								<td></td><td ></td><td ></td>
+								<td><a href="res/PGP-mit-Thunderbird.pdf">Thunderbird</a></td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h3>Messenger</h3>
+						<small>
+							<!--🙂🤨🙁-->
+							<table>
+								<tr>
+									<td></td>
+									<td align="center"><img src="pic/WhatsApp_Icon.png" width="50px" /></td>
+									<td align="center"><img src="pic/Telegram_Icon.png" width="50px" /></td>
+									<td align="center"><img src="pic/Signal_Icon.png" width="50px" /></td>
+									<td align="center"><img src="pic/Threema_Icon.png" width="50px" /></td>
+								</tr>
+								<tr>
+									<td> </td>
+									<td>Whatsapp</td>
+									<td>Telegramm</td>
+									<td>Signal</td>
+									<td>Threema</td>
+								</tr>
+								<tr>
+									<td>Ende-zu-Ende</td>
+									<td class="good">🙂</td>
+									<td class="fishy">🤨</td>
+									<td class="good">🙂</td>
+									<td class="good">🙂</td>
+								</tr>
+								<tr>
+									<td>DSGVO Konform</td>
+									<td class="bad">🙁</td>
+									<td class="fishy">🤨</td>
+									<td class="good">🙂</td>
+									<td class="good">🙂</td>
+								</tr>
+								<tr>
+									<td>Open Source</td>
+									<td class="bad">🙁</td>
+									<td class="fishy">🤨</td>
+									<td class="good">🙂</td>
+									<td class="fishy">🤨</td>
+								</tr>
+								<tr>
+									<td>Auf allen OS</td>
+									<td class="fishy">🤨</td>
+									<td class="good">🙂</td>
+									<td class="good">🙂</td>
+									<td class="bad">🙁</td>
+								</tr>
+								<tr>
+									<td>Kostenfrei</td>
+									<td class="good">🙂</td>
+									<td class="good">🙂</td>
+									<td class="good">🙂</td>
+									<td class="bad">🙁</td>
+								</tr>
+							</table>
+						</small>
+						<p>
+							<tiny>
+								Quellen:
+								<a href="https://www.orcas.de/whatsapp-facebook-skype-telegram-signal-threema-wire-viber-hangouts-icq-jabber-simsme-hoccer-yooyuu-discord-vergleich/">Orcas</a> &
+								<a href="https://www.securemessagingapps.com/">Securemessagingapps</a>
+							</tiny>
+						</p>
+					</section>
+				</section>
+				<section>
+					<section data-background="#208033">
+					<h3>3. Datenverschlüsselung:</h3>
+					<h4>— Cryptomator —</h4>
+					</section>
+					<section data-auto-animate data-background="#208033">
+						<h2>— Cryptomator —</h2>
+						<img data-id="cryptomator" src="pic/Cryptomator-empty-vault-list.png" width="700px" />
+					</section>
+					<section data-auto-animate data-background="#208033">
+						<h2>— Cryptomator —</h2>
+						<img data-id="cryptomator" src="pic/Cryptomator-vault-detail-locked.png" width="700px" />
+					</section>
+					<section data-auto-animate data-background="#208033">
+						<h2>— Cryptomator —</h2>
+						<img data-id="cryptomator" src="pic/Cryptomator-vault-detail-unlocked.png" width="700px" />
+					</section>
+					<section data-auto-animate data-background="#208033">
+						<h2>— Cryptomator —</h2>
+						<img data-id="cryptomator" src="pic/Cryptomator-split-screenshots.png" width="700px" />
+					</section>
+					<section data-auto-animate data-background="#208033">
+						<h2>— Cryptomator —</h2>
+						<img data-id="cryptomator" src="pic/Cryptomator-linux-screenshot.png" width="700px" />
+					</section>
+					<section data-auto-animate data-background="#208033">
+						<h2>— Cryptomator —</h2>
+						<img data-id="cryptomator" src="pic/Cryptomator-android-screenshot.png" width="700px" />
+					</section>
+				</section>
+				<section data-background="#208033">
+					<section data-background="#208033">
+					<h3>4. Zwei Faktor Authentifizierung</h3>
+					<h4 class="fragment fade-in-then-semi-out">— SMS —</h4>
+					<h4 class="fragment fade-in-then-semi-out">— OTP —</h4>
+					<h4 class="fragment fade-in-then-semi-out">— FIDO2 —</h4>
+					<h4 class="fragment fade-in-then-semi-out">— Biometrie —</h4>
+					</section>
+					<section data-background="#208033">
+						<h2>Authentifizierung</h2>
+						<table>
+							<tr>
+								<td>
+									<img src="pic/system-users.svg" width="300px" />
+								</td>
+								<td></td>
+								<td>
+									<ul>
+										<li class="fragment fade-in-then-semi-out">Besitz</li>
+										<ul>
+											<li class="fragment fade-in-then-semi-out">Sicherheitskarte, Schlüssel, …</li>
+										</ul>
+										<li class="fragment fade-in-then-semi-out">Wissen</li>
+										<ul>
+											<li class="fragment fade-in-then-semi-out">Passwort, PIN, TAN, ...</li>
+										</ul>
+										<li class="fragment fade-in-then-semi-out">Biometrie</li>
+										<ul>
+											<li class="fragment fade-in-then-semi-out">Fingerabdruck, Iris, Stimme, Gang, ...</li>
+										</ul>
+									</ul>
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section data-background="#208033">
+						<h2>— SMS —</h2>
+						<table>
+							<tr>
+								<td>
+									<img src="pic/evolution-mail.svg" width="500px" />
+								</td>
+								<td>
+									<ul>
+										<li class="fragment fade-in-then-semi-out">wird bei Bedarf zugestellt</li>
+										<li class="fragment fade-in-then-semi-out">kann nur ein Mal verwendet werden</li>
+										<li class="fragment fade-in-then-semi-out">Vorteil:</li>
+											<ul>
+												<li class="fragment fade-in-then-semi-out">Vorteil: Geheimnis wird über seperaten Kanal zugestellt</li>
+											</ul>
+										<li class="fragment fade-in-then-semi-out">Nachteil:</li>
+											<ul>
+												<li class="fragment fade-in-then-semi-out">sehr anfällig, wenn beide Kanäle auf einem Gerät</li>
+											</ul>
+									</ul>
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section data-background="#208033">
+						<h2>— OTP —</h2>
+						<p>
+							<small><em>One-time password</em></small>
+						</p>
+						<table>
+							<tr>
+								<td>
+									<img src="pic/timer-symbolic.svg" width="300px" />
+								</td>
+								<td>
+									<ul>
+										<li class="fragment fade-in-then-semi-out">kann nur ein Mal verwendet werden</li>
+										<li class="fragment fade-in-then-semi-out">Typen</li>
+										<ul>
+											<li class="fragment fade-in-then-semi-out">Liste (TAN Liste der Bank)</li>
+											<li class="fragment fade-in-then-semi-out">Generator (FreeOTP)</li>
+										</ul>
+									</ul>
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section data-background="#208033">
+						<h2>— OTP: Liste —</h2>
+						<p>
+							<small><em>One-time password</em></small>
+						</p>
+						<table>
+							<tr>
+								<td align="center">
+									<img src="pic/scinotes.png" width="300px" />
+								</td>
+								<td>
+									<ul>
+										<li class="fragment fade-in-then-semi-out">vorgefertigte Listen auf beiden Seiten</li>
+										<li class="fragment fade-in-then-semi-out">Geheimnisse werden bei Bedarf übertragen</li>
+										<li class="fragment fade-in-then-semi-out">Nachteile:</li>
+										<ul>
+											<li class="fragment fade-in-then-semi-out">Verlust der Liste</li>
+											<li class="fragment fade-in-then-semi-out">dumm, wenn Liste in Hände der Angreifer fällt</li>
+										</ul>
+									</ul>
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section data-background="#208033">
+						<h2>— OTP: Generator —</h2>
+						<p>
+							<small><em>One-time password</em></small>
+						</p>
+						<table>
+							<tr>
+								<td align="center">
+									<img src="pic/csd-xsettings.svg" width="300px" />
+								</td>
+								<td>
+									<ul>
+										<li class="fragment fade-in-then-semi-out">Generator erzeugt automatisch ein Passwort</li>
+										<li class="fragment fade-in-then-semi-out">3 Verfahren:</li>
+										<ul>
+											<li class="fragment fade-in-then-semi-out">Zeitgesteuert (1 - 15 min.)</li>
+											<li class="fragment fade-in-then-semi-out">Ereignisgesteuert</li>
+											<li class="fragment fade-in-then-semi-out">Challenge-Response-gesteuert</li>
+										</ul>
+									</ul>
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section data-auto-animate data-background="#208033">
+						<h2>— FIDO2 —</h2>
+						<small><em>Fast IDentity Online</em></small>
+						<table>
+							<tr>
+								<td>
+									<img src="pic/yubikey4.png" width="300px" />
+								</td>
+								<td></td>
+								<td>
+									<ul data-id="yubikey-features">
+										<li class="fragment fade-in-then-semi-out">basiert auf asynchroner Verschlüsselung (wie PGP)</li>
+										<li class="fragment fade-in-then-semi-out">Login ohne Passwort möglich</li>
+										<li class="fragment fade-in-then-semi-out">Sicherheit durch PIN am FIDO2 Gerät</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section data-auto-animate data-background="#208033">
+						<h2>— FIDO2 —</h2>
+						<small><em>Fast IDentity Online</em></small>
+						<table>
+							<tr>
+								<td>
+									<img src="pic/yubikey4.png" width="150px" />
+								</td>
+								<td></td>
+								<td>
+									<ul data-id="yubikey-features">
+										<li class="fragment fade-in-then-semi-out">FIDO-Allianz:</li>
+										<ul>
+											<li class="fragment fade-in-then-semi-out">Google</li>
+											<li class="fragment fade-in-then-semi-out">Microsoft</li>
+											<li class="fragment fade-in-then-semi-out">Facebook</li>
+											<li class="fragment fade-in-then-semi-out">Amazon</li>
+											<li class="fragment fade-in-then-semi-out">Paypal</li>
+											<li class="fragment fade-in-then-semi-out">Visa & Mastercard</li>
+											<li class="fragment fade-in-then-semi-out">…</li>
+										</ul>
+									</ul>
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section data-auto-animate data-background="#208033">
+						<h2>— Biometrie —</h2>
+						<p>
+							<small><em>Individuelle Körpermerkmale</em></small>
+						</p>						<table>
+							<tr>
+								<td>
+									<img src="pic/StefanvonHalenbach-Fingerprint.svg" width="200px" />
+								</td>
+								<td></td>
+								<td>
+									<ul data-id="biometrie-features">
+										<li class="fragment fade-in-then-semi-out">Fingerabdruck</li>
+										<li class="fragment fade-in-then-semi-out">Iris-Scan</li>
+										<li class="fragment fade-in-then-semi-out">Stimmerkennung</li>
+										<li class="fragment fade-in-then-semi-out">Bewegungsmuster</li>
+										<li class="fragment fade-in-then-semi-out">…</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+						<p>
+							<tiny><a href="https://freesvg.org/forensic-detection">Bild: "Vector image of forensic fingerprint scan." by OpenClipart - Lizenz: CC0</a></tiny>
+						</p>
+					</section>
+					<section data-auto-animate data-background="#208033">
+						<h2>— Biometrie: Vorteile —</h2>
+						<p>
+							<small><em>Individuelle Körpermerkmale</em></small>
+						</p>						<table>
+							<tr>
+								<td>
+									<img src="pic/StefanvonHalenbach-Fingerprint.svg" width="250px" />
+								</td>
+								<td></td>
+								<td>
+									<ul data-id="biometrie-features">
+										<li class="fragment fade-in-then-semi-out">lässt sich eindeutig zuordnen</li>
+										<li class="fragment fade-in-then-semi-out">kann nicht verloren gehen</li>
+										<li class="fragment fade-in-then-semi-out">ist nicht ohne weiteres nachzustellen</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+						<p>
+							<tiny><a href="https://freesvg.org/forensic-detection">Bild: "Vector image of forensic fingerprint scan." by OpenClipart - Lizenz: CC0</a></tiny>
+						</p>
+					</section>
+					<section data-auto-animate data-background="#208033">
+						<h2>— Biometrie: Nachteile —</h2>
+						<p>
+							<small><em>Individuelle Körpermerkmale</em></small>
+						</p>
+						<table>
+							<tr>
+								<td>
+									<img src="pic/StefanvonHalenbach-Fingerprint.svg" width="550px" />
+								</td>
+								<td></td>
+								<td>
+									<ul data-id="biometrie-features">
+										<li class="fragment fade-in-then-semi-out">hinterlassen von Spuren</li>
+										<li class="fragment fade-in-then-semi-out">kann nicht gewechselt werden</li>
+										<li class="fragment fade-in-then-semi-out">kann u.U. fehlerhaft sein</li>
+										<li class="fragment fade-in-then-semi-out">weitere Informationen (Geschlecht, Gesundheit, …)</li>
+										<li class="fragment fade-in-then-semi-out">hohe Überwachungsgefähr</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+						<p>
+							<tiny><a href="https://freesvg.org/forensic-detection">Bild: "Vector image of forensic fingerprint scan." by OpenClipart - Lizenz: CC0</a></tiny>
+						</p>
+					</section>
+				</section>
+				<section data-background="#883310">
+					<h2>Welche Lücken bleiben offen?</h2>
+
+					<ul>
+						<li class="fragment fade-in-then-semi-out">Keylogger</li>
+						<li class="fragment fade-in-then-semi-out">Screengrabber</li>
+						<li class="fragment fade-in-then-semi-out">Passwörter</li>
+						<li class="fragment fade-in-then-semi-out">Metadaten</li>
+						<li class="fragment fade-in-then-semi-out">Browser-Fingerprint</li>
+						<li class="fragment fade-in-then-semi-out">Exit-Nodes</li>
+					</ul>
+				</section>
+				<section>
+					<section data-background="cyan">
+						<h2>Best Practice im Cyberspace</h2>
+					</section>
+					<section data-background="cyan">
+						<h2>Allgemein</h2>
+							<ul>
+								<li class="fragment fade-in-then-semi-out">abwesend → Rechner sperren</li>
+								<li class="fragment fade-in-then-semi-out">Es gibt keine Cloud, nur anderer Leute Computer</li>
+							</ul>
+					</section>
+					<section data-background="cyan">
+					<h2>Browser</h2>
+						<ul>
+							<li class="fragment fade-in-then-semi-out">Passwörter <b>nicht</b> im Browser speichern → Passwort Manager</li>
+							<li class="fragment fade-in-then-semi-out">einloggen → ausloggen</li>
+							<li class="fragment fade-in-then-semi-out">weniger ist mehr → keine 1000 Addons</li>
+						</ul>
+					</section>
+					<section data-background="cyan">
+						<h2>Passwort</h2>
+
+						<ul>
+							<li class="fragment fade-in-then-semi-out">Passwort kompromitiert → wechseln</li>
+							<li class="fragment fade-in-then-semi-out">Passwort Eingabe → Dienst überprüfen (https://…)</li>
+							<li class="fragment fade-in-then-semi-out">Default Passwort → sofort wechseln</li>
+							<li class="fragment fade-in-then-semi-out">Schwaches Passwort → sofort wechseln</li>
+							<li class="fragment fade-in-then-semi-out"><b>Ein Account → ein Passwort</b></li>
+						</ul>
+					</section>
+					<section data-background="cyan">
+						<h2>E-Mail</h2>
+						<ul>
+							<li class="fragment fade-in-then-semi-out">HTML Inhalte → nicht nachladen</li>
+							<li class="fragment fade-in-then-semi-out">Links → nicht klicken</li>
+							<li class="fragment fade-in-then-semi-out">Ist eine Postkarte → mit PGP ein Brief</li>
+						</ul>
+					</section>
+				</section>
+				<section data-background="#208033">
+					<h2>Schön das du da warst!</h2>
+					<large>🎉 🎉 🎉 🎉 🎉 🎉 🎉</large>
+					<h3>Fragen?</h3>
+				</section>
+				<section data-background="#dd00dd">
+					<h2>Literatur und Beispiele</h2>
+					<small>
+						<ul>
+							<li>
+								<a href="https://opendatacity.github.io/prism/index.de.html">Durch welche Länder geht mein Datenverkehr?</a>
+							</li>
+							<li>
+								<a href="https://lfd.niedersachsen.de/startseite/themen/technik_und_organisation/orientierungshilfen_und_handlungsempfehlungen/passworte/passworte-gestaltung-und-verwendung-56025.html">Handlungsempfehlungen DSB Niedersachsen</a>
+							</li>
+							<li>
+								<a href="https://www.dsin-blog.de/2012/03/28/passwortsicherheit-i-fakten-keine-mythen/">DsiN-Blog: Passwortsicherheit</a>
+							</li>
+							<li>
+								<a href="https://www.bsi-fuer-buerger.de/BSIFB/DE/Empfehlungen/Passwoerter/passwoerter_node.html">BSI - Sichere Passwörter</a>
+							</li>
+							<li>
+								<a href="https://de.wikipedia.org/wiki/Listen_der_h%C3%A4ufigsten_Passw%C3%B6rter">Wikipedia - Liste der häufigsten Passwörter</a>
+							</li>
+						</ul>
+					</small>
+
+					<hr />
+					<h2>Bilder</h2>
+					<small>
+						<ul>
+							<li>
+								Ubuntu Icon-Theme
+							</li>
+						</ul>
+					</small>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
