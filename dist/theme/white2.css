@@ -357,16 +357,16 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 /* Tables */
 
 .good {
-   background-color: #0F0;
+   background-color: #191;
    text-align: center;
 }
 
 .fishy {
-   background-color: #FF0
+   background-color: #b72
 }
 
 .bad {
-   background-color: #F00
+   background-color: #a11
 }
 
 hr {
